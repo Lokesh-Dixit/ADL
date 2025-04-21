@@ -253,7 +253,7 @@ def generate_dataset(info_dir: str, output_path: str):
 
 def main():
     fire.Fire(
-    {"check": check_qa_pairs
+    {"check": check_qa_pairs,
     "generate_dataset": generate_dataset})
 
 if __name__ == "__main__":
