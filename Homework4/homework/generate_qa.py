@@ -208,6 +208,8 @@ def generate_qa_pairs(info_path: str, view_index: int, img_width: int = 150, img
     # How many karts are in front of the ego car?
     # How many karts are behind the ego car?
 
+
+    # I did refer the GPT for some help in calculating the relative position of Karts with respect Ego kart.
     qa_pairs = []
     karts = extract_kart_objects(info_path, view_index, img_width, img_height)
     track = extract_track_info(info_path)
@@ -323,6 +325,7 @@ def generate_dataset(info_dir: str, output_path: str):
         info_file: Path to the info.json file
         output_path: Path to the my_balanced_qa_pair.json file in 'train' fodler under 'data'
     """
+    # I did refer to GPT and created this function to print the question, answer and image path in json file. 
     info_dir = Path(info_dir)
     qa_dataset = []
 
